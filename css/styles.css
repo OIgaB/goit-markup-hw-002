@@ -2,8 +2,9 @@
 :root {
     --primary-bg-color: #F5F5F5;
     --secondary-bg-color: #F5F4FA; 
-    --employee-bg-color: #FFFFFF; 
-    --accent-bg-and-text-color: #2196F3;
+    --tertiary-bg-and-text-color: #FFFFFF; 
+    --primary-accent-bg-and-text-color: #2196F3;
+    --secondary-accent-bg-color: #188CE8;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
 }
@@ -15,7 +16,7 @@ a {
     font-style: normal;
 }
 body{
-    background-color: var(--employee-bg-color);
+    background-color: var(--tertiary-bg-and-text-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
@@ -25,7 +26,7 @@ body{
 
 /* Логотип */
 .logo {
-    color: var(--accent-bg-and-text-color);
+    color: var(--primary-accent-bg-and-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -35,23 +36,23 @@ body{
     color: #000000;
 }
 .logo>.footer {
-    color: #FFFFFF;
+    color: var(--tertiary-bg-and-text-color);
 }
 
 /* Панель навігації обох сторінок*/
 .nav-link {
-    color: #212121;
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
 .nav-link.current {
-    color: var(--accent-bg-and-text-color);   
+    color: var(--primary-accent-bg-and-text-color);   
 }
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--accent-bg-and-text-color); 
+    color: var(--primary-accent-bg-and-text-color); 
 }
 
 /* Адреса та контакти */
@@ -61,7 +62,7 @@ body{
 }
 
 .address-link {
-    color: var(--employee-bg-color);
+    color: var(--tertiary-bg-and-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -75,7 +76,7 @@ body{
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
-    color: var(--accent-bg-and-text-color);
+    color: var(--primary-accent-bg-and-text-color);
 }
 .footer-contact-link {
     color: rgba(255, 255, 255, 0.6);
@@ -85,15 +86,16 @@ body{
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-    color: var(--accent-bg-and-text-color);
+    color: var(--primary-accent-bg-and-text-color);
 }
 
 /* Кнопки */
 /* Кнопка сторінки Студія - Герой */
 .studio-button {
-    color: var(--employee-bg-color);
-    background-color: var(--accent-bg-and-text-color);
+    color: var(--tertiary-bg-and-text-color);
+    background-color: var(--primary-accent-bg-and-text-color);
     cursor: pointer;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -104,12 +106,13 @@ body{
 }
 .studio-button:hover,
 .studio-button:focus {
-    background-color: #188CE8;
+    background-color: var(--secondary-accent-bg-color);
 }
 /* Кнопки сторінки Портфоліо */
 .portfolio-button {
     background-color: var(--secondary-bg-color);
     cursor: pointer;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -117,8 +120,8 @@ body{
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-    color: var(--employee-bg-color);
-    background-color: var(--accent-bg-and-text-color);
+    color: var(--tertiary-bg-and-text-color);
+    background-color: var(--primary-accent-bg-and-text-color);
 }
 
 /*Сторінка Студія*/ 
@@ -127,7 +130,7 @@ body{
     background-color: #2F303A;
 }
 .hero-title {
-    color: var(--employee-bg-color);
+    color: var(--tertiary-bg-and-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -159,7 +162,7 @@ body{
     background-color: var(--secondary-bg-color);
 }
 .employee-section {
-    background-color: var(--employee-bg-color);
+    background-color: var(--tertiary-bg-and-text-color);
 }
 .team-section-title {
     font-size: 36px;
@@ -183,7 +186,7 @@ body{
 /*Сторінка Портфоліо*/
 /* Перелік проектів сторінки Портоліо*/
 .project {
-    background-color: var(--employee-bg-color);
+    background-color: var(--tertiary-bg-and-text-color);
 }
 /* Заголовки під зображеннями проектів */
 .projet-title {
